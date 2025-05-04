@@ -1,6 +1,5 @@
 import React from 'react';
-import { AiOutlineTeam } from 'react-icons/ai';
-import { PiRanking } from 'react-icons/pi';
+
 
 const tablaPosiciones = () => {
     return(
