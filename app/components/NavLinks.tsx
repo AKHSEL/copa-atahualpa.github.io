@@ -26,16 +26,21 @@ const NavLinks = () => {
     return(
         <>
             {links.map(x => {
-                const LinIcon = x.icon
-                return (
-                <Link 
-                href={x.href} 
-                className={twMerge('flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-slate-700 p-3 text-lg text-white font-bold hover:bg-slate-400 hover:text-white md:flex-none md:justify-start md:p-2 md:px-3', pathname === x.href && "bg-slate-400")}>
-                <LinIcon className='w-6'/>
-                <p className='hidden md:block'>{x.name}</p>
-            </Link>
-            );
-            })}
+    const LinIcon = x.icon
+    return (
+        <Link 
+            key={x.href} // ✅ ESTA LÍNEA SOLUCIONA EL ERROR
+            href={x.href} 
+            className={twMerge(
+                'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-slate-700 p-3 text-lg text-white font-bold hover:bg-slate-400 hover:text-white md:flex-none md:justify-start md:p-2 md:px-3', 
+                pathname === x.href && "bg-slate-400"
+            )}>
+            <LinIcon className='w-6'/>
+            <p className='hidden md:block'>{x.name}</p>
+        </Link>
+    );
+})}
+
         </>
     );
 };
