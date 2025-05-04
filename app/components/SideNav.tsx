@@ -1,8 +1,6 @@
 import React from 'react'
 import { Logo } from './Logo';
-import { FaHome, FaPowerOff } from 'react-icons/fa';
-import { FaRankingStar } from 'react-icons/fa6';
-import { RiTeamFill } from 'react-icons/ri';
+
 import NavLinks from './NavLinks';
 
 

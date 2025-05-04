@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation';
 import React from 'react';
 import { FaRankingStar } from 'react-icons/fa6';
 import { MdToday } from 'react-icons/md';
-import { RiTeamFill } from 'react-icons/ri';
 import { twMerge } from 'tailwind-merge';
 
 const links = [
